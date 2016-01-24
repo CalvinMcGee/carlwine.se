@@ -1,0 +1,13 @@
+html {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.wrapper {
+	background: rgba(255, 255, 255, .6);
+	@include absolute-center;
+	width: 100%;
+}
