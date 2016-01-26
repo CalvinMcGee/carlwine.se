@@ -1,13 +1,16 @@
-html {
+header {
 	background: url('../img/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	height: 100vh;
+	position: relative;
 }
 
-.wrapper {
+.header--content {
 	background: rgba(255, 255, 255, .6);
 	@include absolute-center;
+	text-align: center;
 	width: 100%;
 }
