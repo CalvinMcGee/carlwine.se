@@ -1,21 +1,36 @@
 ---
 layout: default
+contacts:
+  Björn Nyqvist:
+    image: /img/silhoutte_01.svg
+    email: bjorn.nyqvist@carlwine.se
+  Gert Carl:
+    image: /img/silhoutte_02.svg
+    email: gert.carl@carlwine.se
 ---
 <header>
   <div class="header--row row">
     <div class="header--content column small-12 medium-8">
-      <h1>CARL VIN & WINE</h1>
+      <h1>CARL VIN AND WINE</h1>
       <h2>KOMMER SNART</h2>
     </div>
   </div>
 </header>
-<main class="row">
-  <div class="column small-12 medium-6">
-    <h2>Kontakter</h2>
-    <p>Ad aute amet enim ut excepteur dolor est sint qui aute voluptate minim culpa. Sint cupidatat consequat mollit esse laboris aute elit fugiat qui dolor aliqua occaecat ullamco deserunt. Dolor proident minim sunt voluptate ex sit consectetur sunt nulla tempor non. Culpa amet proident ut ad cupidatat cupidatat. Nisi nisi sint culpa incididunt culpa deserunt Lorem ad. Esse qui consectetur officia anim sunt tempor sunt pariatur.</p>
+<main>
+  <div class="row">
+    <div class="column small-12">
+      <h2>CARL VIN AND WINE</h2>
+      <p>Vi håller just nu på att utveckla en ny hemsida.</p>
+      <p>Under tiden så är ni välkomna att kontakta oss.</p>
+    </div>
   </div>
-  <div class="column small-12 medium-6">
-    <h2>Kontakter</h2>
-    <p>Ad aute amet enim ut excepteur dolor est sint qui aute voluptate minim culpa. Sint cupidatat consequat mollit esse laboris aute elit fugiat qui dolor aliqua occaecat ullamco deserunt. Dolor proident minim sunt voluptate ex sit consectetur sunt nulla tempor non. Culpa amet proident ut ad cupidatat cupidatat. Nisi nisi sint culpa incididunt culpa deserunt Lorem ad. Esse qui consectetur officia anim sunt tempor sunt pariatur.</p>
+  <div class="row">
+    {% for contact in page.contacts %}
+      <div class="column small-12 medium-6">
+        <h3>{{ contact[0] }}</h3>
+        <img src="{{ contact[1]["image"] | prepend: site.baseurl }}" />
+        <p>Ad aute amet enim ut excepteur dolor est sint qui aute voluptate minim culpa. Sint cupidatat consequat mollit esse laboris aute elit fugiat qui dolor aliqua occaecat ullamco deserunt. Dolor proident minim sunt voluptate ex sit consectetur sunt nulla tempor non. Culpa amet proident ut ad cupidatat cupidatat. Nisi nisi sint culpa incididunt culpa deserunt Lorem ad. Esse qui consectetur officia anim sunt tempor sunt pariatur.</p>
+      </div>
+    {% endfor %}
   </div>
 </main>
