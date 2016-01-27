@@ -18,3 +18,26 @@ header {
 	@include absolute-center;
 	text-align: center;
 }
+
+main {
+	padding-bottom: 1rem;
+}
+
+.contact {
+	display: inline-block;
+	vertical-align: top;
+
+	@each $breakpoint, $gutter in $grid-column-responsive-gutter {
+		$padding: rem-calc($gutter) / 2;
+
+		@include breakpoint($breakpoint) {
+			padding-left: $padding;
+			padding-right: $padding;
+		}
+	}
+}
+
+footer {
+	background-color: #2C2C2C;
+	color: #FFF;
+}
