@@ -3,12 +3,14 @@ layout: default
 contacts:
   Björn Nyqvist:
     image: /img/silhoutte_02.svg
-    title: Ekonomichef
     email: bjorn.nyqvist@carlwine.se
+    phone_url: "+46704847404"
+    phone: "+46 (0) 704-84 74 04"
   Gert Carl:
     image: /img/silhoutte_01.svg
-    title: Försäljningschef
     email: gert.carl@carlwine.se
+    phone_url: "+45701234567"
+    phone: "+45 (0) 701 23 45 67"
 ---
 <main>
   <div class="row">
@@ -27,8 +29,8 @@ contacts:
           </div>
           <div class="contact">
             <h3>{{ contact[0] }}</h3>
-            <h4>{{ contact[1]["title"]}}</h4>
-            <a href="mailto:{{ contact[1]["email"] }}" class="button hollow">{{ contact[1]["email"] }}</a>
+            <a href="mailto:{{ contact[1]["email"] }}" class="button hollow">{{ contact[1]["email"] }}</a><br />
+            <a href="tel:{{ contact[1]["phone_url"] }}" class="button hollow">{{ contact[1]["phone"] }}</a>
           </div>
         </div>
       </div>
