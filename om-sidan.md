@@ -1,5 +1,5 @@
 ---
-title: Resurser
+title: Om sidan
 ---
 
 Bilder som använts på sidan:
