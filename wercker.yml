@@ -2,17 +2,13 @@
 box: ruby
 build:
   steps:
-    # A custom script step
-    # that actually builds the jekyll site
-    - script:
-        name: install jekyll
-        code: gem install jekyll
+    - bundle-install
 
     # A custom script step
     # that actually builds the jekyll site
     - script:
         name: generate site
-        code: jekyll build --trace
+        code: bundle exec jekyll build --trace
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
