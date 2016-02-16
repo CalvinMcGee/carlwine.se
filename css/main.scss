@@ -5,12 +5,5 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "foundation/foundation",
-  "foundation/util/mixins",
   "main"
 ;
-
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-button;
