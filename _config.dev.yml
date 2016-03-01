@@ -18,8 +18,10 @@ permalink: pretty
 gems: [jekyll-assets]
 
 assets:
+  compress:
+    css: false
   prefix: "/assets"
-  digest: true
+  digest: false
   sources:
     - _sass
 
