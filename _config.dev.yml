@@ -28,7 +28,7 @@ assets:
   prefix: "/assets"
   digest: false
   sources:
-    - _sass
+    - _assets/sass
 
 defaults:
   -
