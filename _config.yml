@@ -25,10 +25,12 @@ gems:
 assets:
   compress:
     css: true
+    javascript: true
   prefix: "/assets"
   digest: true
   sources:
     - _assets/sass
+    - _assets/js
 
 defaults:
   -
