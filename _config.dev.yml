@@ -8,14 +8,19 @@ url: "http://calvinmcgee.github.io" # the base hostname & protocol for your site
 
 destination: _site_dev
 
-exclude: [Gemfile, Gemfile.lock, wercker.yml]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - wercker.yml
 
 # Build settings
 markdown: kramdown
 
 permalink: pretty
 
-gems: [jekyll-assets]
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
 
 assets:
   compress:
