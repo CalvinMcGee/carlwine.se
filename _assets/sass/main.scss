@@ -16,7 +16,7 @@ header {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100vh;
+	height: 50vh;
 	position: relative;
 }
 
@@ -33,6 +33,23 @@ header {
 
 main {
 	padding-bottom: 1rem;
+}
+
+.feature {
+	padding: 1rem 0;
+	background: url('../img/grape.jpeg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 1rem;
+
+	&__content {
+		background-color: rgba(#2C2C2C, 0.75);
+		color: #fefefe;
+		padding: 1rem;
+	}
 }
 
 .contact {
