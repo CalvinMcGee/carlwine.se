@@ -2,7 +2,7 @@
 title: Carl Wine & Spirits
 email: bjorn.nyqvist@carlwine.se
 description: > # this means to ignore newlines until "baseurl:"
-  Carl Wine & Spirits är specialister på den nordiska marknaden.
+  Carl Wine & Spirits are specialists in the Nordic market.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://carlwine.se" # the base hostname & protocol for your site
 
@@ -31,6 +31,8 @@ assets:
   sources:
     - _assets/sass
     - _assets/js
+
+language: "en"
 
 defaults:
   -
