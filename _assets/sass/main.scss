@@ -11,31 +11,38 @@ $body-background: #2C2C2C;
 @include foundation-typography;
 @include foundation-button;
 
+.upper {
+	text-transform: uppercase;
+}
 
 header {
-	background: url('../img/wine-glass.jpg') no-repeat center center fixed;
+	background-image: url('../img/wine-glass.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 50vh;
+	backround-repeat: no-repeat;
+	background-position: 40% 45%;
 	position: relative;
 }
 
 .header--row {
-	@include absolute-center;
-	width: 100%;
 }
 
 .header--content {
 	background: rgba(255, 255, 255, .6);
-	@include absolute-center;
 	text-align: center;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
 }
 
 main {
 	padding-bottom: 1rem;
 	background: #fefefe;
+}
+
+.headline {
+	padding: 4rem 0;
 }
 
 .feature {
