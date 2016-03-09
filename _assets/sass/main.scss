@@ -4,6 +4,8 @@
 	"foundation/foundation"
 ;
 
+$body-background: #2C2C2C;
+
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -33,6 +35,7 @@ header {
 
 main {
 	padding-bottom: 1rem;
+	background: #fefefe;
 }
 
 .feature {
