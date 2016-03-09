@@ -64,6 +64,7 @@ main {
 
 .contact {
 	display: inline-block;
+	padding: 1rem 0;
 	vertical-align: top;
 
 	@each $breakpoint, $gutter in $grid-column-gutter {
@@ -79,5 +80,6 @@ main {
 footer {
 	background-color: #2C2C2C;
 	color: #FFF;
+	padding: 1rem 0;
 	text-align: center;
 }
