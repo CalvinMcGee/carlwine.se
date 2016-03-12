@@ -23,6 +23,8 @@ header {
 	background-size: cover;
 	backround-repeat: no-repeat;
 	background-position: 40% 45%;
+	padding-top: 1rem;
+	padding-bottom: 7rem;
 	position: relative;
 }
 
@@ -32,8 +34,10 @@ header {
 .header--content {
 	color: #fefefe;
 	text-align: center;
-	margin-top: 10rem;
-	margin-bottom: 10rem;
+}
+
+nav {
+	margin-bottom: 5rem;
 }
 
 .menu {
