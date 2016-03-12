@@ -30,10 +30,25 @@ header {
 }
 
 .header--content {
-	background: rgba(255, 255, 255, .6);
+	color: #fefefe;
 	text-align: center;
 	margin-top: 10rem;
 	margin-bottom: 10rem;
+}
+
+.menu {
+
+	@include menu-base;
+	@include menu-direction(vertical);
+	float: right;
+
+	@include breakpoint(medium up) {
+		@include menu-direction(horizontal);
+	}
+
+	& > li > a {
+		color: #fefefe;
+	}
 }
 
 main {
