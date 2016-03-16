@@ -5,11 +5,13 @@
 ;
 
 $body-background: #2C2C2C;
+$breadcrumbs-margin: $global-margin 0 $global-margin 0;
 
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
 @include foundation-button;
+@include foundation-breadcrumbs;
 
 .upper {
 	text-transform: uppercase;
