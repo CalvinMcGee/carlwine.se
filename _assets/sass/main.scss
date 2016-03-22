@@ -11,6 +11,7 @@ $breadcrumbs-margin: $global-margin 0 $global-margin 0;
 @include foundation-grid;
 @include foundation-typography;
 @include foundation-button;
+@include foundation-table;
 @include foundation-breadcrumbs;
 
 .upper {
