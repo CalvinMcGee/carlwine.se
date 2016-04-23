@@ -14,21 +14,22 @@ contacts:
     phone: "+46 (0) 709-84 74 04"
 ---
 <main class="content">
-  <div class="row">
-    <div class="row headline">
-      <div class="column small-12 text-center">
-          <h2 class="upper">Wine is our passion</h2>
-          <h3 class="subheader">We have decades of experience in the Nordic market</h3>
-          <a href="#contact" class="button large">Contact us</a>
+  <div class="row" id="contact">
+    <h1>Contact us</h1>
+    <p>You're welcome to contact us.</p>
+    {% for contact in page.contacts %}
+      <div class="column small-12 medium-6">
+        <div class="row">
+          <div class="contact small-4">
+            <img src="{{ contact[1]["image"] | prepend: site.baseurl }}" alt="{{ contact[0] }}" />
+          </div>
+          <div class="contact">
+            <h3>{{ contact[0] }}</h3>
+            <a href="mailto:{{ contact[1]["email"] }}" class="button hollow">{{ contact[1]["email"] }}</a><br />
+            <a href="tel:{{ contact[1]["phone_url"] }}" class="button hollow">{{ contact[1]["phone"] }}</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="row">
-      <div class="columns small-10 small-centered medium-8 large-6 text-center feature__content">
-        <h2>Eu sint labore occaecat</h2>
-        <p>Labore cillum amet deserunt ad Lorem. Ad occaecat nisi ut nostrud id fugiat veniam mollit sint excepteur sint. Ut enim ullamco est amet ut sint velit. Enim fugiat non reprehenderit non aliquip tempor. Quis cupidatat anim culpa commodo reprehenderit reprehenderit sint consequat pariatur dolor exercitation eiusmod incididunt mollit. Labore fugiat sit cupidatat ex est elit cillum cillum tempor. Deserunt reprehenderit ut nisi occaecat aliqua commodo dolor labore ea esse voluptate occaecat elit. In enim Lorem laborum eu est officia ea.</p>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </main>
