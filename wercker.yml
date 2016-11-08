@@ -20,7 +20,7 @@ build-dev:
         name: generate dev site
         code: bundle exec jekyll build --trace --config _config.yml,_config.dev.yml
 
-deploy:
+github:
   steps:
     - lukevivier/gh-pages@0.2.1:
       token: $GIT_TOKEN
