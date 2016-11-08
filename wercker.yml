@@ -8,7 +8,7 @@ build:
     # that actually builds the jekyll site
     - script:
         name: generate dev site
-        code: bundle exec jekyll build --trace --config _config.dev.yml
+        code: bundle exec jekyll build --trace --config _config.yml,_config.dev.yml
     - script:
         name: generate prod site
         code: bundle exec jekyll build --trace --config _config.yml
