@@ -21,6 +21,7 @@ github:
 
 production:
   steps:
+    # This is needed until edgecaseadmin/install-aws-cli has fixed the issue for aws-cli 1.11.19+
     - install-packages:
         packages: libpython-dev
     - edgecaseadmin/install-aws-cli:
